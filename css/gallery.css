@@ -1,0 +1,24 @@
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  width: 400px;
+  height: 300px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.image {
+  height: 100%;
+  object-fit: cover;
+}
