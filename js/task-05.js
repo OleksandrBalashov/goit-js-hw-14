@@ -1,10 +1,8 @@
 const inputRef = document.querySelector("#name-input");
 const spanRef = document.querySelector("#name-output");
 
-const defaultValue = span.textContent;
+const defaultValue = spanRef.textContent;
 
-inputRef.addEventListener("input", (event) => {
-  const inputValue = event.target.value;
-
-  spanRef.textContent = inputValue || defaultValue;
+inputRef.addEventListener("input", ({ target: { value } }) => {
+  spanRef.textContent = value || defaultValue;
 });
